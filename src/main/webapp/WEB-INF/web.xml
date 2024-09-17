@@ -19,4 +19,13 @@
     <url-pattern>/criaCantor</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>addCantor</servlet-name>
+    <servlet-class>web.CantorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addCantor</servlet-name>
+    <url-pattern>/addCantor</url-pattern>
+  </servlet-mapping>
+
 </web-app>

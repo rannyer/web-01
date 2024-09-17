@@ -1,21 +1,14 @@
 <%@ page import="java.util.ArrayList"%>
 
 
-<%
-    ArrayList<String> cantores =  new ArrayList<>();
+<c:forEach items="${cantores}" var="cantor">
 
-    cantores.add("Joelma");
-    cantores.add("DIO");
-    cantores.add("Trevo Scort");
-    cantores.add("Tunico e Tinoco");
-    cantores.add("Manoel Gomes");
-    cantores.add("Zé Manguinho");
-    cantores.add("Milionário e José Rico");
-    cantores.add("Boonie e Clay");
-    cantores.add("Raul Seixas");
-    cantores.add("Vitas");
-    cantores.add("Scarlxd");
-%>
+    <p><c:out value="${cantor.nome}"/></p>
+    <p><c:out value="${cantor.estiloMusical}"/></p>
+    <p><c:out value="${cantor.qtdAlbuns}"/></p>
+</c:forEach>
+
+
 <html>
 <body>
 <%@ include file="header.jsp"  %>
